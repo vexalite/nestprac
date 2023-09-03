@@ -33,7 +33,7 @@ export class BookmarkService {
         const bookmark = await this.prisma.bookmark.create({
             data: {
                 userId,
-              ...dto,
+                ...dto
             },
           });
     

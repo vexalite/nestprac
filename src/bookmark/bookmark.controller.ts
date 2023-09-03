@@ -4,6 +4,7 @@ import { BookmarkService } from './bookmark.service';
 import { CreateBookmarkDto, EditBookmarkDto } from './dto';
 import { GetUser } from 'src/auth/decorator';
 import { JwtGuard } from 'src/auth/guard';
+import { User } from '@prisma/client';
 
 @UseGuards(JwtGuard)
 @Controller('bookmarks')

@@ -16,8 +16,8 @@ Strategy,
         })
     }
     async validate(payload: {
-        sub: number,
-    email:string
+        sub: string,
+        email:string
     }){
         // console.log({payload})
         const user = await this.prisma.user.findUnique({
